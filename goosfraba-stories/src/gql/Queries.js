@@ -1,16 +1,10 @@
 import { gql } from "@apollo/client";
 
 export const GET_2019_DATA = gql`
-  query Posts {
-    allPosts {
-      id
-      title
-      body
+  query getPostsByYear {
+    allPosts(count: 100) {
       createdAt
-      author {
-        id
-        firstName
-      }
+      id
     }
   }
 `;

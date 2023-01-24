@@ -7,7 +7,6 @@ const client = new ApolloClient({
   uri: "https://fakerql.goosfraba.ro/graphql",
   cache: new InMemoryCache(),
 });
-console.log(client);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
